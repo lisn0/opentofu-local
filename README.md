@@ -1,14 +1,14 @@
 [![Build status](https://github.com/localstack/terraform-local/actions/workflows/build.yml/badge.svg)](https://github.com/localstack/terraform-local/actions)
 
-# `tflocal` - Terraform with LocalStack
+# `tflocal` - OpenTofu with LocalStack
 
-This package provides `tflocal` - a small wrapper script to run [Terraform](https://terraform.io) against [LocalStack](https://localstack.cloud).
+This package provides `tflocal` - a small wrapper script to run [OpenTofu](https://opentofu.org/) against [LocalStack](https://localstack.cloud).
 
 ## Prerequisites
 
 * Python 3.x
 * `pip`
-* `terraform`
+* `OpenTofu`
 
 ## How it works
 
@@ -24,7 +24,7 @@ pip install terraform-local
 ## Configurations
 
 The following environment variables can be configured:
-* `TF_CMD`: Terraform command to call (default: `terraform`)
+* `TF_CMD`: OpenTofu command to call (default: `tofu`)
 * `AWS_ENDPOINT_URL`: hostname and port of the target LocalStack instance
 * `LOCALSTACK_HOSTNAME`: __(Deprecated)__ host name of the target LocalStack instance
 * `EDGE_PORT`: __(Deprecated)__ port number of the target LocalStack instance
@@ -43,8 +43,8 @@ The following environment variables can be configured:
 
 ## Usage
 
-The `tflocal` command has the same usage as the `terraform` command. For detailed usage,
-please refer to the man pages of `terraform --help`.
+The `tflocal` command has the same usage as the `tofu` command. For detailed usage,
+please refer to the man pages of `tofu --help`.
 
 ## Change Log
 
@@ -70,5 +70,5 @@ please refer to the man pages of `terraform --help`.
 
 This software library is released under the Apache License, Version 2.0 (see `LICENSE`).
 
-[pypi-version]: https://img.shields.io/pypi/v/terraform-local.svg
-[pypi]: https://pypi.org/project/terraform-local/
+[pypi-version]: https://img.shields.io/pypi/v/opentofu-local.svg
+[pypi]: https://pypi.org/project/opentofu-local/
