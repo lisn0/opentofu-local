@@ -1,4 +1,4 @@
-[![Build status](https://github.com/localstack/terraform-local/actions/workflows/build.yml/badge.svg)](https://github.com/localstack/terraform-local/actions)
+[![Build status](https://github.com/lisn0/opentofu-local/actions/workflows/build.yml/badge.svg)](https://github.com/localstack/terraform-local/actions)
 
 # `tflocal` - OpenTofu with LocalStack
 
