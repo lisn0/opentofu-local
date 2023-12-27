@@ -33,3 +33,18 @@ jobs:
       run: make lint
     - name: Run tests
       run: make test
+  pypi-publish:
+    name: Upload release to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/opentofu-local
+    permissions:
+      id-token: write 
+    steps:
+    - name: Build Dist
+      run: |
+        python3 -m pip install wheel
+        python3 setup.py sdist bdist_wheel
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
