@@ -18,7 +18,7 @@ The script uses the [Terraform Override mechanism](https://www.terraform.io/lang
 
 The `tflocal` command line interface can be installed via `pip`:
 ```
-pip install terraform-local
+pip install opentofu-local
 ```
 
 ## Configurations
