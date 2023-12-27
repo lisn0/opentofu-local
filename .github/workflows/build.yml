@@ -21,8 +21,6 @@ jobs:
       uses: actions/checkout@v4
     - name: Pull LocalStack Docker image
       run: docker pull localstack/localstack &
-    - name: Install opentofu
-      run: snap install --classic opentofu  
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
